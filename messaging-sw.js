@@ -1,3 +1,4 @@
+const messaging = firebase.messaging();
 
 self.addEventListener('notificationclick', function(event) {
     const target = event.notification.data.click_action || '/';
